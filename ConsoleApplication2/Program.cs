@@ -311,6 +311,11 @@ namespace ConsoleApplication2
 
     class Program
     {
+        static void Foo(object o)
+        {
+
+        }
+
         static void Main(string[] args)
         {
             /*
@@ -322,7 +327,9 @@ namespace ConsoleApplication2
             */
 
 
-            
+            Func<int, object> d = x => x.ToString();
+
+            Action<string> contrvariant = Foo;
             
         }
     }
